@@ -1,0 +1,12 @@
+GET http://localhost:3000
+
+###
+POST http://localhost:3000/calcular 
+Content-Type: application/json
+
+{
+  "base": 2,
+  "altura": 3
+}
+###
+GET http://localhost:3000/consultar 
