@@ -1,0 +1,12 @@
+GET http://localhost:3000
+
+###
+POST http://localhost:3000/alumnos
+Content-Type: application/json
+
+{
+  "nombre": "Cecilia",
+  "notas": [7, 8, 9]
+}
+###
+GET http://localhost:3000/condicion 
