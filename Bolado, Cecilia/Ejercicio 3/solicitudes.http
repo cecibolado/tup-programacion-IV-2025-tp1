@@ -1,0 +1,30 @@
+###
+GET http://localhost:3000
+
+###
+POST http://localhost:3000/tareas
+Content-Type: application/json
+
+{
+  "nombre": "Limpiar",
+  "completada": false
+}
+###
+POST http://localhost:3000/tareas
+Content-Type: application/json
+
+{"nombre": "Estudiar",
+  "completada": true
+}
+###
+GET http://localhost:3000/tareas/completada
+
+###
+GET http://localhost:3000/tareas/incompletas
+###
+PUT http://localhost:3000/tareas/limpiar
+Content-Type: application/json
+
+{
+  "completada": true
+}
